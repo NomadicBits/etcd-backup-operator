@@ -1,0 +1,7 @@
+apiVersion: backup.etcdbackup.io/v1alpha1
+kind: EtcdBackup
+metadata:
+  name: example-etcdbackup
+spec:
+  # Add fields here
+  size: 3

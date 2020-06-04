@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: etcd-backup-operator
+subjects:
+- kind: ServiceAccount
+  name: etcd-backup-operator
+roleRef:
+  kind: Role
+  name: etcd-backup-operator
+  apiGroup: rbac.authorization.k8s.io
